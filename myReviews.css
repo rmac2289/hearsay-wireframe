@@ -24,11 +24,17 @@
     right: 0;
     z-index: 10;
   }
-  
+  #banner {
+      margin-top:60px;
+  }
   header {
     padding: 45px 15px;
   }
-  
+  nav > ul {
+    list-style: none;
+    display: flex;
+    font-size: 16px;
+}
   section {
     min-height: 200px;
     padding: 30px 15px;

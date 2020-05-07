@@ -25,9 +25,14 @@
     right: 0;
     z-index: 10;
   }
+  nav > ul {
+    list-style: none;
+    display: flex;
+    font-size: 16px;
+}
   
   header {
-    padding: 45px 15px;
+    padding-top: 125px;
   }
   
   section {
