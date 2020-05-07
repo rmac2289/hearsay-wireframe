@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <title>Hearsay</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+      <link rel="stylesheet" type="text/css" href="writeReview.css">
+  </head>
+
+  <body>
+    <nav role="navigation">
+        <ul>
+            <h5>pages (for wireframe purposes only)</h5>
+            <li><a href="./landing.html">Home</a></li>
+            <li><a href="./login.html">Log In</a></li>
+            <li><a href="./createAccount.html">Create Account</a></li>
+            <li><a href="./myReviews.html">My Reviews</a></li>
+            <li><a href="./searchResults.html">Search Results</a></li>
+            <li><a href="./singleReview.html.html">Single Review</a></li>
+            <li><a href="./writeReview.html">Write Review</a></li>
+        </ul>
+    </nav>
+    <main role="main">
+      <header>
+        <h1>New Review</h1>
+      </header>
+      <section>
+        <form id="record-dream">
+          <div class="form-section">
+            <label for="locality">Locality</label>
+            <input type="text" name="locality" placeholder="City/Department" required>
+          </div>
+          <div class="form-section">
+            <label for="nature">Nature of encounter</label>
+            <textarea name="nature" rows="5"  placeholder="brief explanation of why your interaction occurred" required></textarea>
+          </div>
+          <div class="hours-slept-container" class="form-section">
+            <label for="rating">Rating</label>
+            <input type="number" name="rating" placeholder="8">
+          </div>
+          <div class="form-section">
+            <label for="comments">comments</label>
+            <textarea name="comments" rows="15"></textarea>
+          </div>
+          <div class="form-section">
+            <p>how did you feel after your experience?</p>
+
+            <input type="radio" name="terrible" value="0" class="dream-type-radio" checked>
+            <label for="terrible">
+              <span>terrible</span>
+              <div class="dream-type-explanation">They had no right to treat me that way. Unacceptable.</div>
+            </label>
+
+            <input type="radio" name="bad" value="1" class="dream-type-radio">
+            <label for="bad">
+              <span>bad</span>
+              <div class="dream-type-explanation">That was disrespectful. I was treated poorly.</div>
+            </label>
+
+            <input type="radio" name="ok" value="2" class="dream-type-radio">
+            <label for="ok">
+              <span>ok</span>
+              <div class="dream-type-explanation">No major complaints, but nothing good to say either.</div>
+            </label>
+
+            <input type="radio" name="good" value="3" class="dream-type-radio">
+            <label for="good">
+              <span>good</span>
+              <div class="dream-type-explanation">That was a pretty good experience - I got the help I needed.</div>
+            </label>
+
+            <input type="radio" name="great" value="4" class="dream-type-radio">
+            <label for="great">
+              <span>great</span>
+              <div class="dream-type-explanation">They went above and beyond to see that I got the help I needed.</div>
+            </label>
+          </div>
+
+          <div class="form-section">
+            <p class="dream-date-header">Date of Encounter</p>
+            <input type="number" name="date-month" placeholder="01" min="1" max="12" required=""> .
+            <input type="number" name="date-day" class="date-day"  placeholder="01" min="1" max="31" required=""> .
+            <input type="number" name="date-year" class="date-year" placeholder="2017" min="2016" max="2017" required="">
+          </div>
+
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
+    </main>
+  </body>
+
+</html>
